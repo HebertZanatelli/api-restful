@@ -7,7 +7,7 @@ const ProductController = require('../controllers/products')
 //PUT - atualizar dados
 //DELETE - remover
 
-router.get('/products', ProductController.get)
+router.get('/products/:id?', ProductController.get) // ao colocar o :id?, determina para o express, que o parametro id é opcional
 // router.post('/products', ProductController.post)
 // router.put('/products/:id', ProductController.put)
 // router.delete('/products/:id', ProductController.delete)
