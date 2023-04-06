@@ -2,8 +2,8 @@
 
   const schema = new mongoose.Schema({
     name: String,
-    brand: Number,
-    price: String
+    brand: String,
+    price: Number
   })
 
   const Model = mongoose.model('products', schema)
