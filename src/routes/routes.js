@@ -8,7 +8,7 @@ const ProductController = require('../controllers/products')
 //DELETE - remover
 
 router.get('/products/:id?', ProductController.get) // ao colocar o :id?, determina para o express, que o parametro id é opcional
-// router.post('/products', ProductController.post)
+router.post('/products', ProductController.post)
 // router.put('/products/:id', ProductController.put)
 // router.delete('/products/:id', ProductController.delete)
 
